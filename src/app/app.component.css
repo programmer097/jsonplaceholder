@@ -10,7 +10,7 @@ mat-drawer {
   background-color: transparent;
   width: auto;
   border-radius: 0px;
-  border: 1px solid black;
+  border: 1px solid lightgrey;
 }
 
 mat-sidenav {

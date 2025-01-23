@@ -5,10 +5,22 @@
   height: 14rem;
   overflow: hidden;
   background-color: transparent;
+  border-radius: 6px;
+}
+
+.post-card:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid gray;
+  cursor: pointer;
 }
 
 .post-card-footer {
   padding: 16px;
+}
+
+mat-card-header {
+  height: 3.8rem;
+  border-bottom: 1px solid lightgray;
 }
 
 mat-card-title {
