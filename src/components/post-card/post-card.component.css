@@ -1,7 +1,22 @@
-.example-card {
-  max-width: 400px;
+.post-card {
+  flex: 0 0 auto; /* Ensure items don't grow */
+  margin: 0 20px 20px 0; /* Add padding to items */
+  max-width: 22rem;
+  height: 14rem;
+  overflow: hidden;
+  background-color: transparent;
 }
 
-.example-card-footer {
+.post-card-footer {
   padding: 16px;
+}
+
+mat-card-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
 }

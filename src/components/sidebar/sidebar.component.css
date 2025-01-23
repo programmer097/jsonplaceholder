@@ -1,5 +1,5 @@
 h1 {
-  padding-left: 1rem;
+  padding: 0 1rem;
 }
 mat-list-item:hover {
   background-color: lightgrey;

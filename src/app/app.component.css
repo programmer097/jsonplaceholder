@@ -7,6 +7,8 @@
 }
 
 mat-drawer {
+  background-color: transparent;
+  width: auto;
   border-radius: 0px;
   border: 1px solid black;
 }
@@ -16,5 +18,5 @@ mat-sidenav {
 }
 
 mat-drawer-content {
-  padding: 0rem 2rem;
+  padding: 0.5rem 2rem;
 }
