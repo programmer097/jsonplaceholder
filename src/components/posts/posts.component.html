@@ -1,0 +1,5 @@
+<div class="posts">
+  @for (post of postList; track $index) {
+  <app-post-card [data]="post"></app-post-card>
+  }
+</div>

@@ -1,0 +1,7 @@
+h1 {
+  padding-left: 1rem;
+}
+mat-list-item:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
