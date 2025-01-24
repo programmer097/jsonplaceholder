@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Post } from 'src/models';
+import { Post, Comment } from 'src/models'; // Assuming you have a Comment model
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +15,7 @@ export class DataService {
   }
   getComments() {
     const path = `${this.basePath}/comments`;
-    return this.http.get<Post[]>(path);
+    return this.http.get<Comment[]>(path);
   }
   getAlbums() {
     const path = `${this.basePath}/albums`;

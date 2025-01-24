@@ -1,1 +1,17 @@
-<p>comments works!</p>
+<div class="comments">
+  <mat-grid-list cols="3" rowHeight="fit" gutterSize="16px">
+    @for (comment of commentList; track $index) {
+      <mat-grid-tile>
+        <mat-card class="comment" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title>{{ comment.name }}</mat-card-title>
+            <mat-card-subtitle>{{ comment.email }}</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>{{ comment.body }}</p>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    }
+  </mat-grid-list>
+</div>
