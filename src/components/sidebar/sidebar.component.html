@@ -3,8 +3,11 @@
 <nav>
   <mat-list role="list">
     @for (item of resources; track $index) {
-    <mat-list-item role="listitem" [routerLink]="item.path"
-      >{{ item.name | titlecase }}
+    <mat-list-item role="listitem" [routerLink]="item.path">
+      <div class="flex">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        <span>{{ item.name | titlecase }}</span>
+      </div>
     </mat-list-item>
     }
   </mat-list>
