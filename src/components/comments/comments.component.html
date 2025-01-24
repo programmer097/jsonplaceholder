@@ -1,8 +1,8 @@
 <div class="comments">
-  <mat-grid-list cols="3" rowHeight="fit" gutterSize="16px">
-    @for (comment of commentList; track $index) {
-      <mat-grid-tile>
-        <mat-card class="comment" appearance="outlined">
+  <div class="flex-list">
+    @for (comment of commentList; track trackById($index, comment)) {
+      <div class="flex-item">
+        <mat-card class="comment transparent-background" appearance="outlined">
           <mat-card-header>
             <mat-card-title>{{ comment.name }}</mat-card-title>
             <mat-card-subtitle>{{ comment.email }}</mat-card-subtitle>
@@ -11,7 +11,7 @@
             <p>{{ comment.body }}</p>
           </mat-card-content>
         </mat-card>
-      </mat-grid-tile>
+      </div>
     }
-  </mat-grid-list>
+  </div>
 </div>

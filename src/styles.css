@@ -6,3 +6,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .transparent-background {
   background-color: transparent !important;
 }
+
+.flex-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.flex-item {
+  flex: 1 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+}

@@ -1,0 +1,10 @@
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.user-item {
+  flex: 1 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+}

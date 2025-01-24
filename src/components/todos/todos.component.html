@@ -1,1 +1,16 @@
-<p>todos works!</p>
+<div class="todos">
+  <div class="flex-list">
+    @for (todo of todoList; track trackById($index, todo)) {
+      <div class="flex-item">
+        <mat-card class="todo transparent-background" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title>{{ todo.title }}</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p><strong>Completed:</strong> {{ todo.completed }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    }
+  </div>
+</div>
