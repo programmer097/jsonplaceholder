@@ -3,10 +3,11 @@ import { Post } from 'src/models';
 import { DataService } from 'src/services/data.service';
 import { PostCardComponent } from '../post-card/post-card.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-posts',
-  imports: [PostCardComponent, MatGridListModule],
+  imports: [PostCardComponent, MatGridListModule, MatCardModule],
   templateUrl: './posts.component.html',
   styleUrl: './posts.component.css',
 })

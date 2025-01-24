@@ -1,14 +1,14 @@
 <div class="photos">
   <div class="flex-list">
     @for (photo of photoList; track trackById($index, photo)) {
-      <div class="flex-item">
-        <mat-card class="photo transparent-background" appearance="outlined">
-          <img mat-card-image [src]="photo.url" alt="{{ photo.title }}">
-          <mat-card-header>
-            <mat-card-title>{{ photo.title }}</mat-card-title>
-          </mat-card-header>
-        </mat-card>
-      </div>
+    <div class="flex-item">
+      <mat-card class="photo transparent-background" appearance="outlined">
+        <!-- <img mat-card-image [src]="photo.url" alt="{{ photo.title }}"> -->
+        <mat-card-header>
+          <mat-card-title>{{ photo.title }}</mat-card-title>
+        </mat-card-header>
+      </mat-card>
+    </div>
     }
   </div>
 </div>

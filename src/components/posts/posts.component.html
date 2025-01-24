@@ -1,5 +1,5 @@
 <div class="posts">
-  @for (post of postList; track $index) {
+  @for (post of postList; track $index) { @defer (on viewport){
   <app-post-card [data]="post"></app-post-card>
-  }
+  } @placeholder { <mat-card>Loading...</mat-card> } }
 </div>
