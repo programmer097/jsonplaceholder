@@ -1,4 +1,8 @@
-<mat-card class="post-card" appearance="outlined">
+<mat-card
+  [routerLink]="['/post', data()?.id]"
+  class="post-card"
+  appearance="outlined"
+>
   <mat-card-header>
     <mat-card-title>{{ data()?.title }}</mat-card-title>
   </mat-card-header>
@@ -6,10 +10,10 @@
     <p>{{ data()?.body }}</p>
   </mat-card-content>
   <!-- <mat-card-footer class="post-card-footer">
-    <mat-chip-set aria-label="Chihuahua traits">
-      <mat-chip>charming</mat-chip>
-      <mat-chip>graceful</mat-chip>
-      <mat-chip>sassy</mat-chip>
-    </mat-chip-set>
-  </mat-card-footer> -->
+      <mat-chip-set aria-label="Chihuahua traits">
+        <mat-chip>charming</mat-chip>
+        <mat-chip>graceful</mat-chip>
+        <mat-chip>sassy</mat-chip>
+      </mat-chip-set>
+    </mat-card-footer> -->
 </mat-card>

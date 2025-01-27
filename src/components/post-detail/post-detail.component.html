@@ -1,0 +1,14 @@
+<div *ngIf="post">
+  <app-post-card [data]="post"></app-post-card>
+  <div *ngIf="comments?.length">
+    <h3>Comments</h3>
+    <ul>
+      <li *ngFor="let comment of comments">
+        <p>
+          <strong>{{ comment.name }}</strong
+          >: {{ comment.body }}
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>

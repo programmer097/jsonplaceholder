@@ -14,6 +14,16 @@ export class DataService {
     return this.http.get<Post[]>(path);
   }
 
+  getPostById(id: number) {
+    const path = `${this.basePath}/posts/${id}`;
+    return this.http.get<Post>(path);
+  }
+
+  getCommentsByPostId(id: number) {
+    const path = `${this.basePath}/posts/${id}/comments`;
+    return this.http.get<Comment[]>(path);
+  }
+
   getComments() {
     const path = `${this.basePath}/comments`;
     return this.http.get<Comment[]>(path);

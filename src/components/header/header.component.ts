@@ -15,7 +15,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.title = event.urlAfterRedirects.split('/').pop() || '';
+        this.title =
+          event.urlAfterRedirects.split('/').join(' / ')?.slice(2) || '';
       }
     });
   }

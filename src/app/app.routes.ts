@@ -6,6 +6,7 @@ import { PhotosComponent } from 'src/components/photos/photos.component';
 import { PostsComponent } from 'src/components/posts/posts.component';
 import { TodosComponent } from 'src/components/todos/todos.component';
 import { UsersComponent } from 'src/components/users/users.component';
+import { PostDetailComponent } from 'src/components/post-detail/post-detail.component';
 
 export const routes: Routes = [
   {
@@ -36,5 +37,9 @@ export const routes: Routes = [
   {
     path: 'users',
     component: UsersComponent,
+  },
+  {
+    path: 'post/:id',
+    component: PostDetailComponent,
   },
 ];
